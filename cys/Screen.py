@@ -14,7 +14,6 @@ class Screen:
             'invalid_language': 'Please choose an available language',
             'welcome': 'Welcome to CyS CoffeeMaker',
             'menu': 'Menu \n \nE -> Espresso \nC -> Capuccino \nL -> Latte \nA -> American \n \nR -> Refill ingredients \nS -> See deposit \n \nX -> Exit', 
-            'done': 'Your coffee is done!', 
             'invalid_option': 'The selected option is not among the menu options', 
             'farewell': 'Good bye', 
             'not_enough_ingredients': 'Not enough ingredients to prepare the selected coffee. Please check the deposit', 
@@ -24,8 +23,7 @@ class Screen:
 
         self._spanish_messages = {
             'welcome': 'Bienvenido a CyS CoffeeMaker',
-            'menu': 'Menú \n \nE -> Espresso \nC -> Capuccino \nL -> Latte \nA -> Americano \n \nR -> Rellenar ingredientes \nS -> Ver depósito \n \nX -> Salir',
-            'done': '¡Su café está listo!', 
+            'menu': 'Menú \n \nE -> Espresso \nC -> Capuccino \nL -> Latte \nA -> American \n \nR -> Rellenar ingredientes \nS -> Ver depósito \n \nX -> Salir',
             'invalid_option': 'La opción seleccionada no está dentro de las opciones del menú', 
             'farewell': 'Hasta pronto', 
             'not_enough_ingredients': 'No hay suficientes ingredientes para preparar el café seleccionado. Por favor revise el depósito', 
@@ -53,6 +51,15 @@ class Screen:
         else:
             print('Cantidad de leche:', deposit['milk'], 'ml \nCantidad de agua:', deposit['water'], 'ml \nCantidad de café:', deposit['coffee'], 'gr \nCantidad de azúcar:', deposit['sugar'], 'gr')
 
+    def display_done_message(self, recipe, language):
+        '''Displays the coffee made message on the screen.'''
+
+        os.system('cls')
+        if language == 'E':
+            print('Your', recipe.get_name(), 'is done!')
+        else:
+            print('¡Su', recipe.get_name(), 'está listo!')
+        
     def wait(self, seconds):
         '''Wait seconds received.'''
 

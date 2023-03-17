@@ -13,7 +13,7 @@ class Cys:
             'E': Recipe('Espresso', 7, 30, 25),
             'C': Recipe('Capuccino', 7, 30, 30, 125, 4),
             'L': Recipe('Latte Macciato', 7, 30, 35, 300),
-            'A': Recipe('Americano', 14, 60, 20)
+            'A': Recipe('American', 14, 60, 20)
         }
             
         #The CoffeeMaker class is instantiated to create the CyS CoffeeMaker
@@ -43,7 +43,7 @@ class Cys:
                 if cys.enough_amount(recipes[user_choice]): #Checks if there are enough ingredients
                     cys.make_coffee(recipes[user_choice]) #Makes the selected coffee
                     screen.chronometer(recipes[user_choice].get_time()) #Chronometer
-                    screen.display_message('done', language)
+                    screen.display_done_message(recipes[user_choice], language)
                 else:
                     screen.display_message('not_enough_ingredients', language)
                         
