@@ -42,7 +42,7 @@ class Screen:
             print(self._spanish_messages[message])
 
     def display_deposit_message(self, coffeeMaker, language):
-        '''Displays the status of the coffee maker deposit on the screen'''
+        '''Displays the status of the coffee maker deposit on the screen.'''
 
         os.system('cls')
         deposit = coffeeMaker.deposit()
@@ -71,4 +71,4 @@ class Screen:
         for second in range(seconds, 0, -1):
             os.system('cls')
             print(second)
-            time.sleep(1)
+            time.sleep(1) 
