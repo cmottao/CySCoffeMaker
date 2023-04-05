@@ -29,4 +29,4 @@ class Recipe:
         return self._sugar_amount
     
     def get_time(self):
-        return self._time
+        return self._time 

@@ -57,7 +57,7 @@ class CoffeeMaker:
         '''Refills the deposit.'''
 
         self._milk = MAX_MILK
-        self._water = MAX_WATER
+        self._water = MAX_WATER 
         self._coffee = MAX_COFFEE
         self._sugar = MAX_SUGAR
 
