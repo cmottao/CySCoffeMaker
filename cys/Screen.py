@@ -4,11 +4,11 @@ import time
 class Screen:
     '''Represents the screen of the coffee maker.'''
 
-    #Constructor method
+    # Constructor method
     def __init__(self):
         '''Initializes an object of type Screen.'''
 
-        #Default messages
+        # Default messages
         self._english_messages = {
             'choose_language': 'Choose a language \nE -> English \nS -> Spanish',
             'invalid_language': 'Please choose an available language',
@@ -31,7 +31,7 @@ class Screen:
             'filled_in': 'El depósito ha sido rellenado'
         }
 
-    #Methods
+    # Methods
     def display_message(self, message, language):
         '''Displays a message on the screen.'''
 

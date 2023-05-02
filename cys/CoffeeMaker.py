@@ -1,4 +1,4 @@
-#Maximum capacities of the coffee maker
+# Maximum capacities of the coffee maker
 MAX_MILK = 300
 MAX_WATER = 1500
 MAX_COFFEE = 100
@@ -7,7 +7,7 @@ MAX_SUGAR = 50
 class CoffeeMaker:
     '''Represents a coffee maker.'''
     
-    #Constructor method
+    # Constructor method
     def __init__(self): 
         '''Initializes an object of type coffee maker.'''
         
@@ -16,7 +16,7 @@ class CoffeeMaker:
         self._coffee = MAX_COFFEE
         self._sugar = MAX_SUGAR
 
-    #Getters methods
+    # Getters methods
     def get_milk(self):
         return self._milk
     
@@ -29,7 +29,7 @@ class CoffeeMaker:
     def get_sugar(self):
         return self._sugar
     
-    #Methods
+    # Methods
     def make_coffee(self, recipe): 
         '''Makes the coffee and makes the changes in the deposit.'''
         

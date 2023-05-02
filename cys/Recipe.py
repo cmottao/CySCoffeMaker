@@ -1,7 +1,7 @@
 class Recipe:
     '''Represents a coffee recipe.'''
 
-    #Constructor method
+    # Constructor method
     def __init__(self, name, coffee_amount, water_amount, time, milk_amount=0, sugar_amount=0):         
         '''Initializes an object of type Recipe.'''
 
@@ -12,7 +12,7 @@ class Recipe:
         self._sugar_amount = sugar_amount
         self._time = time
 
-    #Getters methods
+    # Getters methods
     def get_name(self):
         return self._name
     
